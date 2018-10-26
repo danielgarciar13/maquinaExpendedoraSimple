@@ -74,7 +74,7 @@ public class MaquinaExpendedoraSimple {
             System.out.println();
     
             // Actualiza el total de dinero acumulado en la maquina
-            totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
+            totalDineroAcumulado = totalDineroAcumulado + precioBillete;
             // Queda preparada para el proximo cliente
             balanceClienteActual = balanceClienteActual - precioBillete;
         }
@@ -82,5 +82,10 @@ public class MaquinaExpendedoraSimple {
         {
             System.out.println("No tienes suficiente dinero");
         }
+    }
+    
+    public int getter()
+    {
+        return totalDineroAcumulado;
     }
 }
