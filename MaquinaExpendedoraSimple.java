@@ -93,4 +93,9 @@ public class MaquinaExpendedoraSimple {
     {
         precioBillete = costeBillete;
     }
+    
+    public void descuento(int descuento)
+    {
+        precioBillete = precioBillete - descuento;
+    }
 }
